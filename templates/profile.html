@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient background */
+            font-family: Arial, sans-serif;
+            color: #333; /* Text color */
+        }
+        .container-fluid {
+            padding: 40px;
+        }
+        .btn-primary {
+            background-color: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient background for primary button */
+            border-color: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient border color */
+            width: 100%;
+            text-align: left;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #8e44ad, #3498db); /* Gradient background on hover */
+            border-color: linear-gradient(135deg, #8e44ad, #3498db); /* Gradient border color on hover */
+        }
+        h1 {
+            color: #fff; /* Heading text color */
+            margin-bottom: 30px; /* Add margin */
+            text-align: center; /* Center-align text */
+        }
+        .link-background {
+            background-color: #fff; /* White background */
+            padding: 20px; /* Add padding */
+            border-radius: 10px; /* Rounded corners */
+            margin-bottom: 20px; /* Add margin */
+            text-align: center; /* Center-align text */
+            max-width: 400px; /* Reduce maximum width */
+            margin: 0 auto; /* Center horizontally */
+        }
+        .vertical-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .link-item {
+            margin-bottom: 15px;
+        }
+        .link-item a {
+            color: #333; /* Link text color */
+            text-decoration: none; /* Remove underline */
+            display: flex;
+            align-items: center;
+        }
+        .link-item a:hover {
+            color: #000; /* Link text color on hover */
+            text-decoration: none; /* Remove underline on hover */
+        }
+        .icon {
+            margin-right: 10px; /* Add margin between icon and text */
+            font-size: 20px; /* Icon size */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+    <h1>Welcome {{ username }}!!</h1>
+
+    <div class="link-background">
+        <div class="vertical-links">
+            <div class="link-item">
+                <a href="{{ url_for('dashboard')}}" class="btn btn-primary">
+                    <i class="fas fa-tachometer-alt icon"></i> Dashboard
+                </a>
+            </div>
+            <div class="link-item">
+                <a href="{{ url_for('Search')}}" class="btn btn-primary">
+                    <i class="fas fa-search icon"></i> Search Data
+                </a>
+            </div>
+            <div class="link-item">
+                <a href="{{ url_for('upload')}}" class="btn btn-primary">
+                    <i class="fas fa-upload icon"></i> Upload Data
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- Font Awesome JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</body>
+</html>
