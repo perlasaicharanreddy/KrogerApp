@@ -37,7 +37,7 @@ Web Page with Dashboard to answer Which demographic factors appear to affect cus
 
 
 ### Dashboard
-![](ReadmeImages/ss3.png)
+![](ReadmeImages/ss3.jpg)
 
 
 ### Azure databse
