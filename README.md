@@ -41,10 +41,10 @@ Web Page with Dashboard to answer Which demographic factors appear to affect cus
 
 
 ### Azure databse
-![](ReadmeImages/ss4.png)
+![](ReadmeImages/ss4.jpg)
 
-![](ReadmeImages/ss5.png)
+![](ReadmeImages/ss5.jpg)
 
 
 ### Database Explorer
-![](ReadmeImages/ss6.png)
+![](ReadmeImages/ss6.jpg)
